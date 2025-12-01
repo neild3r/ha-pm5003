@@ -35,6 +35,17 @@ def parse_args():
         default=10,
         help="Polling interval in seconds (default: 10)",
     )
+    parser.add_argument(
+        "--pin-enable",
+        default=GPIO22,
+        help="Enable pin",
+    )
+    parser.add_argument(
+        "--pin-reset",
+        default=GPIO27,
+        help="Reset pin",
+    )
+
     return parser.parse_args()
 
 
@@ -69,7 +80,7 @@ def main():
     print(f"Initializing PM5003 sensor on {args.device} at {args.baudrate} baud...")
 
     try:
-        pms5003 = PMS5003(device=args.device, baudrate=args.baudrate)
+        pms5003 = PMS5003(device=args.device, baudrate=args.baudrate, pin_enable=args.pin_enable, pin_reset=args.pin_reset)
     except Exception as e:
         print(f"Failed to initialize sensor: {e}", file=sys.stderr)
         sys.exit(1)

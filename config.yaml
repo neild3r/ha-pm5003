@@ -12,6 +12,8 @@ options:
   device: "/dev/ttyAMA0"
   baudrate: 9600
   poll_interval: 10
+  pin_enable: GPIO22
+  pin_reset: GPIO27
 schema:
   device: str
   baudrate: int
