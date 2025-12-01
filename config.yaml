@@ -7,8 +7,6 @@ arch:
   - armv7
   - aarch64
 url: "https://github.com/neild3r/ha-pm5003"
-startup: application
-boot: auto
 init: false
 options:
   device: "/dev/ttyAMA0"
