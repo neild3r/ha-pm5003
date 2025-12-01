@@ -1,0 +1,20 @@
+name: "PM5003 Sensor"
+version: "1.0.0"
+slug: pm5003
+description: "Home Assistant add-on for Pimoroni PM5003 particulate matter sensor"
+arch:
+  - amd64
+  - armv7
+  - aarch64
+url: "https://github.com/neild3r/ha-pm5003"
+startup: application
+boot: auto
+options:
+  device: "/dev/ttyAMA0"
+  baudrate: 9600
+  poll_interval: 10
+schema:
+  device: str
+  baudrate: int
+  poll_interval: int
+uart: true
