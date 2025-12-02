@@ -37,12 +37,12 @@ def parse_args():
     )
     parser.add_argument(
         "--pin-enable",
-        default=GPIO22,
+        default="GPIO22",
         help="Enable pin",
     )
     parser.add_argument(
         "--pin-reset",
-        default=GPIO27,
+        default="GPIO27",
         help="Reset pin",
     )
 
