@@ -17,6 +17,8 @@ echo "Poll interval: ${POLL_INTERVAL} seconds"
 echo "Pin enable: ${PIN_ENABLE}"
 echo "Pin reset: ${PIN_RESET}"
 
+ls -la /dev/
+
 # Activate virtual environment and run Python script
 source /opt/venv/bin/activate
 python3 /pm5003_reader.py --device "${DEVICE}" --baudrate "${BAUDRATE}" --poll-interval "${POLL_INTERVAL}" --pin-enable "${PIN_ENABLE}" --pin-reset "${PIN_RESET}"
