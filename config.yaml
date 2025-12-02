@@ -21,3 +21,4 @@ schema:
   pin_enable: str
   pin_reset: str
 uart: true
+gpio: true
