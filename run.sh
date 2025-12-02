@@ -17,7 +17,7 @@ echo "Poll interval: ${POLL_INTERVAL} seconds"
 echo "Pin enable: ${PIN_ENABLE}"
 echo "Pin reset: ${PIN_RESET}"
 
-ls -la /dev/
+whoami
 
 # Activate virtual environment and run Python script
 source /opt/venv/bin/activate
