@@ -66,7 +66,7 @@ def read_sensor(pms5003):
             "pm10": data.pm_ug_per_m3(10),
             "pm1_0_atm": data.pm_ug_per_m3(1.0, atmospheric_environment=True),
             "pm2_5_atm": data.pm_ug_per_m3(2.5, atmospheric_environment=True),
-            "pm10_atm": data.pm_ug_per_m3(10, atmospheric_environment=True),
+            "pm10_atm": data.pm_ug_per_m3(None, atmospheric_environment=True),
         }
     except Exception as e:
         print(f"Error reading sensor: {e}", file=sys.stderr)

@@ -1,5 +1,5 @@
 name: "PM5003 Sensor"
-version: "1.0.6"
+version: "1.0.7"
 slug: pm5003
 description: "Home Assistant add-on for Pimoroni PM5003 particulate matter sensor"
 arch:
