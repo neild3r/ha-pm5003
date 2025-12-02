@@ -77,7 +77,7 @@ def main():
     """Main entry point."""
     args = parse_args()
 
-    print(f"Initializing PM5003 sensor on {args.device} at {args.baudrate} baud...")
+    print(f"Initializing PM5003 sensor on {args.device} at {args.baudrate} baudrate with enable {args.pin_enable} and reset {args.pin_reset}")
 
     try:
         pms5003 = PMS5003(device=args.device, baudrate=args.baudrate, pin_enable=args.pin_enable, pin_reset=args.pin_reset)

@@ -14,6 +14,8 @@ echo "Starting PM5003 sensor add-on..."
 echo "Device: ${DEVICE}"
 echo "Baudrate: ${BAUDRATE}"
 echo "Poll interval: ${POLL_INTERVAL} seconds"
+echo "Pin enable: ${PIN_ENABLE}"
+echo "Pin reset: ${PIN_RESET}"
 
 # Activate virtual environment and run Python script
 source /opt/venv/bin/activate

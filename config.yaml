@@ -1,5 +1,5 @@
 name: "PM5003 Sensor"
-version: "1.0.3"
+version: "1.0.4"
 slug: pm5003
 description: "Home Assistant add-on for Pimoroni PM5003 particulate matter sensor"
 arch:
@@ -12,11 +12,13 @@ options:
   device: "/dev/ttyAMA0"
   baudrate: 9600
   poll_interval: 10
-  pin_enable: GPIO22
-  pin_reset: GPIO27
+  pin_enable: "GPIO22"
+  pin_reset: "GPIO27"
 schema:
   device: str
   baudrate: int
   poll_interval: int
+  pin_enable: str
+  pin_reset: str
 uart: true
 gpio: true
